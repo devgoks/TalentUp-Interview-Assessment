@@ -27,11 +27,11 @@ public class CustomControllerExceptionHandler {
         return new ResponseEntity<>(HttpStatus.METHOD_NOT_ALLOWED);
     }
 
-//    @ExceptionHandler
-//    public ResponseEntity<Object> handle(Exception exception) {
-//        Map<String,Object> map = new HashMap<>();
-//        map.put("error","unknown failure");
-//        map.put("message","");
-//        return new ResponseEntity<>(map, null, HttpStatus.INTERNAL_SERVER_ERROR);
-//    }
+    @ExceptionHandler
+    public ResponseEntity<Object> handle(Exception exception) {
+        Map<String,Object> map = new HashMap<>();
+        map.put("error","unknown failure");
+        map.put("message","");
+        return new ResponseEntity<>(map, null, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 }

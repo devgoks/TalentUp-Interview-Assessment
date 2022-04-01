@@ -101,7 +101,7 @@ public class SmsService {
         return new ResponseEntity<>(response, null, httpStatus);
     }
 
-    private String joinFromAndToPhoneNumber(String from, String to){
+    public String joinFromAndToPhoneNumber(String from, String to){
         return from.concat("_").concat(to);
     }
 }
