@@ -24,7 +24,7 @@
    - POST http://localhost:8080/outbound/sms/
  
  ####  Hosted Service
- This service is hosted on Linode and can be access at IP - 139.162.239.14
+ This service is hosted on Linode and can be accessed at IP - 139.162.239.14
  1. You can access the Inbound SMS API
     - POST http://139.162.239.14:8080/inbound/sms/
  2. You can access the Outbound SMS API
